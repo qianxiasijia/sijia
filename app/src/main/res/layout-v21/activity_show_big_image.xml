@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qianxia.sijia.ui.ShowBigImageActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_showbigimage"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:fitsSystemWindows="true"
+        android:elevation="8dp"
+        android:title="图片"
+        android:titleTextColor="@color/icons"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/OverflowMenuStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        contentInsetStart="0dp"
+        contentInsetEnd="0dp">
+
+        <TextView
+            android:id="@+id/tv_toolbar_showbigimage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:gravity="center"
+            android:textColor="@color/icons"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.qianxia.sijia.view.PhotoViewPager
+        android:id="@+id/viewpager_showbigimage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianxia.sijia.fragment.NearbyFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_nearby_place"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_btn_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_place" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="附近的佳处"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="80dp"
+        android:background="@color/divider"
+        android:layout_marginEnd="4dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_nearby_friend"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_btn_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_friend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="附近的佳友"
+            android:gravity="center_vertical" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="80dp"
+        android:background="@color/divider"
+        android:layout_marginEnd="4dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_nearby_other"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_btn_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_other" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="附近其他"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="80dp"
+        android:background="@color/divider"
+        android:layout_marginEnd="4dp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qianxia.sijia.ui.PostFoodActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_toolbar_activity"
+        android:id="@+id/layout_toolbar_activity" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        android:padding="4dp"
+        android:background="@drawable/shape_hotcity_n">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                <TextView
+                    android:text="佳食名称："
+                    style="@style/style_postfood_text_item" />
+
+                <EditText
+                    android:id="@+id/et_postfood_foodname"
+                    style="@style/style_postfood_edittext_item"
+                    android:hint="请填写名称..."
+                    android:textColorHint="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_ll_postfood_edititem"
+                android:descendantFocusability="blocksDescendants">
+
+                <TextView
+                    android:text="佳食分类："
+                    style="@style/style_postfood_text_item" />
+
+                <LinearLayout
+                    android:id="@+id/ll_postfood_maincategory"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/selector_btn_accent2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:focusable="false">
+
+                    <TextView
+                        android:id="@+id/tv_postfood_maincategory"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:hint="请选择主分类..."
+                        android:textColorHint="@color/divider" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_down"
+                        android:layout_marginStart="4dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_postfood_subcategory"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/selector_btn_accent2"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/tv_postfood_subcategory"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:hint="请选择次分类..."
+                        android:textColorHint="@color/divider" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_down"
+                        android:layout_marginStart="4dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                <TextView
+                    android:text="所属佳店："
+                    style="@style/style_postfood_text_item" />
+
+                <TextView
+                    android:id="@+id/tv_postfood_selectshop"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:hint="请选择佳店..."
+                    android:textSize="14sp"
+                    android:layout_marginEnd="4dp"
+                    android:textColorHint="@color/divider" />
+
+                <TextView
+                    android:id="@+id/btn_postfood_selectshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="选择佳店"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/icons"
+                    android:background="@drawable/selector_btn_accent" />
+
+                <TextView
+                    android:id="@+id/btn_postfood_addshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="添加佳店"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/icons"
+                    android:background="@drawable/selector_btn_accent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_postfood_layout_addshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="佳店信息："
+                    android:textColor="@color/primary" />
+
+                <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                    <TextView
+                        android:text="佳店名称："
+                        style="@style/style_postfood_text_item" />
+
+                    <EditText
+                        android:id="@+id/et_postfood_shopname"
+                        style="@style/style_postfood_edittext_item"
+                        android:hint="请填写名称..."
+                        android:textColorHint="@color/divider" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                    <TextView
+                        android:text="所属区域："
+                        style="@style/style_postfood_text_item" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_postfood_district"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|end"
+                        android:paddingEnd="8dp"
+                        android:background="@drawable/selector_btn_accent2"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_postfood_district"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:hint="请选择区域..."
+                            android:textColorHint="@color/divider" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_marginStart="4dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_postfood_street"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|end"
+                        android:paddingEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/selector_btn_accent2"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_postfood_street"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:hint="请选择街道..."
+                            android:textColorHint="@color/divider" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_marginStart="4dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                    <TextView
+                        android:text="详细地址："
+                        style="@style/style_postfood_text_item" />
+
+                    <EditText
+                        android:id="@+id/et_postfood_address"
+                        style="@style/style_postfood_edittext_item"
+                        android:hint="请填写地址..."
+                        android:textColorHint="@color/divider" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                    <TextView
+                        android:text="营业时间："
+                        style="@style/style_postfood_text_item" />
+
+                    <EditText
+                        android:id="@+id/et_postfood_opentime"
+                        style="@style/style_postfood_edittext_item"
+                        android:hint="选填..."
+                        android:textColorHint="@color/divider" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                    <TextView
+                        android:text="联系电话："
+                        style="@style/style_postfood_text_item" />
+
+                    <EditText
+                        android:id="@+id/et_postfood_telephone"
+                        style="@style/style_postfood_edittext_item"
+                        android:hint="选填..."
+                        android:textColorHint="@color/divider" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_background_white_tophalf">
+
+                    <TextView
+                        android:text="佳店美照(必要)："
+                        style="@style/style_postfood_text_item" />
+
+                    <ImageButton
+                        android:id="@+id/btn_postfood_shoppicture"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/selector_postcomment_add_pictures"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/btn_postfood_shopcamera"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/selector_postcomment_add_camera"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_postfood_shopprogress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_postfood_shopimagenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:padding="5dp"
+                        android:text="  "
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <com.qianxia.sijia.view.NumberProgressBar
+                        android:id="@+id/npb_postfood_shopprogressbar"
+                        style="@style/NumberProgressBar_Default"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="invisible"
+                        app:progress_reached_bar_height="12dp"
+                        app:progress_text_size="12sp"
+                        app:progress_unreached_bar_height="6dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_postfood_shopimglayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_background_white_bottomhalf"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_postfood_shopimg0"
+                        style="@style/style_postcomment_commentimgs" />
+
+                    <ImageView
+                        android:id="@+id/iv_postfood_shopimg1"
+                        style="@style/style_postcomment_commentimgs" />
+
+                    <ImageView
+                        android:id="@+id/iv_postfood_shopimg2"
+                        style="@style/style_postcomment_commentimgs" />
+
+                    <ImageView
+                        android:id="@+id/iv_postfood_shopimg3"
+                        style="@style/style_postcomment_commentimgs" />
+
+                    <ImageView
+                        android:id="@+id/iv_postfood_shopimg4"
+                        style="@style/style_postcomment_commentimgs" />
+
+                    <ImageView
+                        android:id="@+id/iv_postfood_shopimg5"
+                        style="@style/style_postcomment_commentimgs" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="vertical"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/shape_background_white">
+
+                    <TextView
+                        android:text="佳店简介："
+                        android:layout_marginBottom="8dp"
+                        style="@style/style_postfood_text_item" />
+
+                    <EditText
+                        android:id="@+id/et_postfood_shopbrief"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="6"
+                        android:padding="4dp"
+                        android:textSize="12sp"
+                        android:gravity="top"
+                        android:hint="请填写简介..."
+                        android:textColorHint="@color/divider"
+                        android:textColor="@color/primary_text"
+                        android:background="@drawable/shape_input_redling"
+                        android:layout_marginBottom="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_background_white_tophalf">
+
+                <TextView
+                    android:text="佳食美照(必要)："
+                    style="@style/style_postfood_text_item" />
+
+                <ImageButton
+                    android:id="@+id/btn_postfood_foodpicture"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/selector_postcomment_add_pictures"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/btn_postfood_foodcamera"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/selector_postcomment_add_camera"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_postfood_foodprogress"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_postfood_foodimagenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:text="  "
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <com.qianxia.sijia.view.NumberProgressBar
+                    android:id="@+id/npb_postfood_foodprogressbar"
+                    style="@style/NumberProgressBar_Default"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"
+                    app:progress_reached_bar_height="12dp"
+                    app:progress_text_size="12sp"
+                    app:progress_unreached_bar_height="6dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_postfood_foodimglayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_background_white_bottomhalf">
+
+                <ImageView
+                    android:id="@+id/iv_postfood_foodimg0"
+                    style="@style/style_postcomment_commentimgs" />
+
+                <ImageView
+                    android:id="@+id/iv_postfood_foodimg1"
+                    style="@style/style_postcomment_commentimgs" />
+
+                <ImageView
+                    android:id="@+id/iv_postfood_foodimg2"
+                    style="@style/style_postcomment_commentimgs" />
+
+                <ImageView
+                    android:id="@+id/iv_postfood_foodimg3"
+                    style="@style/style_postcomment_commentimgs" />
+
+                <ImageView
+                    android:id="@+id/iv_postfood_foodimg4"
+                    style="@style/style_postcomment_commentimgs" />
+
+                <ImageView
+                    android:id="@+id/iv_postfood_foodimg5"
+                    style="@style/style_postcomment_commentimgs" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_ll_postfood_edititem">
+
+                <TextView
+                    android:text="参考价格："
+                    style="@style/style_postfood_text_item" />
+
+                <EditText
+                    android:id="@+id/et_postfood_foodprice"
+                    style="@style/style_postfood_edittext_item"
+                    android:inputType="numberDecimal"
+                    android:hint="选填"
+                    android:textColorHint="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shape_background_white">
+
+                <TextView
+                    android:text="佳食简介："
+                    android:layout_marginBottom="8dp"
+                    style="@style/style_postfood_text_item" />
+
+                <EditText
+                    android:id="@+id/et_postfood_foodbrief"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="6"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:gravity="top"
+                    android:hint="请填写简介..."
+                    android:textColor="@color/primary_text"
+                    android:textColorHint="@color/divider"
+                    android:background="@drawable/shape_input_redling"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

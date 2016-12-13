@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShareFragment"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:elevation="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefreshlayout_sharefragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_sharefragment_food"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/divider"
+                android:dividerHeight="10dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <TextView
+            android:id="@+id/tv_sharefragment_empty"
+            android:layout_marginTop="64dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:text="（还没有佳店，等你添加哟~）"
+            android:textColor="@color/divider"
+            android:background="@color/icons"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="8dp"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_toolbar_activity"
+        android:id="@+id/layout_toolbar_activity" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview_foodrank_category"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_btn_gray_n"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rg_foodrank_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_foodrank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:background="@drawable/shape_btn_gray_n" />
+
+</LinearLayout>

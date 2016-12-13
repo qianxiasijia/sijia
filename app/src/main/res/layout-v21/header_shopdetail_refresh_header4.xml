@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:sijia="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_background_white"
+        android:elevation="2dp"
+        android:focusable="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="评论列表"
+            android:textColor="@color/accent"
+            android:textSize="14sp"
+            android:focusable="false" />
+
+        <com.qianxia.sijia.view.SijiaTextView
+            android:id="@+id/tv_likenum_shopdetail_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:text="(0)"
+            android:textSize="14sp"
+            sijia:sijiaDrawableLeft="@drawable/ic_like"
+            sijia:sijiaDrawableLeftHeight="8dp"
+            sijia:sijiaDrawableLeftWidth="8dp"
+            android:focusable="false"
+
+            />
+
+        <com.qianxia.sijia.view.SijiaTextView
+            android:id="@+id/tv_commentnum_shopdetail_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:layout_toStartOf="@+id/tv_likenum_shopdetail_header2"
+            android:gravity="center_vertical"
+            android:text="(0)"
+            android:textSize="14sp"
+            sijia:sijiaDrawableLeft="@drawable/ic_comment"
+            sijia:sijiaDrawableLeftHeight="6dp"
+            sijia:sijiaDrawableLeftWidth="6dp"
+            android:focusable="false" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_writecomment_shopdetail_header2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:text="写评论"-->
+        <!--android:textSize="12sp"-->
+        <!--android:focusable="false"/>-->
+    </RelativeLayout>
+
+
+</LinearLayout>

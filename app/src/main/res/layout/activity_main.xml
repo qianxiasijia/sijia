@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sijia="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <include
+        android:id="@+id/layout_toolbar_activity"
+        layout="@layout/layout_toolbar_activity" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_main_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view_main_drawer"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:alpha="0.5"
+            android:elevation="8dp"
+            app:headerLayout="@layout/layout_header_drawer"
+            app:itemBackground="@color/icons"
+            app:itemTextColor="@color/primary_text"
+            app:menu="@menu/menu_drawer_main" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/shape_background_white"
+        android:orientation="horizontal">
+
+        <com.qianxia.sijia.view.SijiaBottomView
+            android:id="@+id/bv_food_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            sijia:bv_color="@color/primary"
+            sijia:bv_drawable="@drawable/ic_paihang"
+            sijia:bv_drawable_size="20dp"
+            sijia:bv_size="12sp"
+            sijia:bv_text="佳榜" />
+
+        <com.qianxia.sijia.view.SijiaBottomView
+            android:id="@+id/bv_share_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            sijia:bv_color="@color/primary"
+            sijia:bv_drawable="@drawable/ic_tuijian"
+            sijia:bv_drawable_size="20dp"
+            sijia:bv_size="12sp"
+            sijia:bv_text="共享" />
+
+        <com.qianxia.sijia.view.SijiaBottomView
+            android:id="@+id/bv_nearby_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            sijia:bv_color="@color/primary"
+            sijia:bv_drawable="@drawable/ic_nearby"
+            sijia:bv_drawable_size="20dp"
+            sijia:bv_size="12sp"
+            sijia:bv_text="寻佳" />
+
+        <com.qianxia.sijia.view.SijiaBottomView
+            android:id="@+id/bv_my_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            sijia:bv_color="@color/primary"
+            sijia:bv_drawable="@drawable/ic_my"
+            sijia:bv_drawable_size="20dp"
+            sijia:bv_size="12sp"
+            sijia:bv_text="我" />
+
+    </LinearLayout>
+</LinearLayout>

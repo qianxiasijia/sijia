@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianxia.sijia.ui.RegistActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_toolbar_activity"
+        android:id="@+id/layout_toolbar_activity" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="96dp"-->
+    <!--android:layout_height="96dp"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:src="@drawable/icon_my_photo"-->
+    <!--android:layout_gravity="center"/>-->
+
+    <LinearLayout
+        android:layout_marginTop="48dp"
+        style="@style/style_regist_editlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="*用户名：" />
+
+        <EditText
+            android:id="@+id/et_regist_username"
+            style="@style/style_regist_edittext" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_regist_editlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="*密码：" />
+
+        <EditText
+            android:id="@+id/et_regist_password"
+            style="@style/style_regist_edittext" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_regist_editlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="*密码确认：" />
+
+        <EditText
+            android:id="@+id/et_regist_passwordcheck"
+            style="@style/style_regist_edittext" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_regist_editlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="性别：" />
+
+        <RadioGroup
+            android:id="@+id/rg_regist_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbt_regist_male"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="男"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbt_regist_female"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_regist_editlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="出生年月：" />
+
+        <EditText
+            android:id="@+id/tv_regist_date"
+            style="@style/style_regist_edittext"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_regist_regist"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="注册"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="22sp"
+        android:textColor="@color/icons"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/selector_btn_accent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</LinearLayout>

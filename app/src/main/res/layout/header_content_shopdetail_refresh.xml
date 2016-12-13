@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sijia="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_anthor_shopdetail_header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="12dp"
+        android:text="该佳食信息由提供" />
+
+    <TextView
+        android:id="@+id/tv_shopname_shopdetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:text="商店名称:"
+        android:textColor="@color/accent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+
+    <TextView
+        android:id="@+id/tv_address_shopdetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:background="@drawable/selector_btn_white"
+        android:elevation="2dp"
+        android:text="地址" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_opentime_shopdetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+
+        android:text="营业时间" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_telephone_shopdetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+
+        android:text="联系电话" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_description_shopdetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:text="description" />
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_count">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_background" />
+
+    <com.qianxia.sijia.view.CircleImageView
+        android:id="@+id/iv_count_atavar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_my_photo" />
+
+    <TextView
+        android:id="@+id/tv_count_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:textSize="14sp"
+        android:textColor="@color/icons"
+        android:background="#2f000000"
+        android:padding="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/iv_count_atavar"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/tv_count_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称："
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/icons"
+        android:background="#2f000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_alignStart="@+id/tv_count_username"
+        android:layout_below="@+id/tv_count_username"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

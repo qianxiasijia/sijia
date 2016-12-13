@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp">
+
+    <FrameLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp">
+
+        <com.qianxia.sijia.view.CircleImageView
+            android:id="@+id/iv_fooddetail_item_avatar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_my_photo" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_fooddetail_item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:gravity="center"
+            android:text="username"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/tv_fooddetail_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="2016-01-03 01:01:01" />
+
+
+        <TextView
+            android:id="@+id/tv_fooddetail_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            android:text="testzzzzzzzzzzzzzzzzzzzzzzzz
+            zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+            zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fooddetail_item_imgscontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_fooddetail_item_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                android:text="回复"
+                android:textColor="@color/primary"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/tv_fooddetail_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tv_fooddetail_item_replay"
+                android:textSize="12sp"
+                android:textColor="@color/accent"
+                android:text="删除"
+                android:padding="4dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fooddetail_item_replaycontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

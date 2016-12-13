@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.qianxia.sijia.view.CircleImageView
+        android:id="@+id/iv_foodfragment_item_categoryphoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tv_foodfragment_item_categoryname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/accent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:gravity="center_vertical"
+        android:text="名称" />
+
+
+</LinearLayout>

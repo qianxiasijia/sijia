@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="sijia">
+        <!--设置图片的高宽-->
+        <attr name="sijiaDrawableTopWidth" format="dimension" />
+        <attr name="sijiaDrawableTopHeight" format="dimension" />
+        <attr name="sijiaDrawableLeftWidth" format="dimension" />
+        <attr name="sijiaDrawableLeftHeight" format="dimension" />
+        <attr name="sijiaDrawableRightWidth" format="dimension" />
+        <attr name="sijiaDrawableRightHeight" format="dimension" />
+        <attr name="sijiaDrawableBottomWidth" format="dimension" />
+        <attr name="sijiaDrawableBottomHeight" format="dimension" />
+        <!--设置图片资源-->
+        <attr name="sijiaDrawableTop" format="reference" />
+        <attr name="sijiaDrawableLeft" format="reference" />
+        <attr name="sijiaDrawableRight" format="reference" />
+        <attr name="sijiaDrawableBottom" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SijiaBottomView">
+        <attr name="bv_size" format="dimension" />
+        <attr name="bv_color" format="color" />
+        <attr name="bv_drawable" format="reference" />
+        <attr name="bv_drawable_size" format="dimension" />
+        <attr name="bv_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SijiaLetterView">
+        <attr name="letter_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sijia="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_toolbar_activity"
+        android:id="@+id/layout_toolbar_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/et_citysearch_search"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:hint="请输入城市中文名称、拼音"
+            android:textColorHint="@color/divider"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_tv_search_cityselect" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listview_citysearch_cities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:scrollbars="none"
+            android:divider="#00ffffff" />
+
+        <com.qianxia.sijia.view.SijiaLetterView
+            android:id="@+id/slv_citysearch"
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            sijia:letter_color="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_citysearch_letter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:background="@drawable/shape_btn_gray_n"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/pb_citysearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

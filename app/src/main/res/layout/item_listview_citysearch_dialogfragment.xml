@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_section_item_lsitview_citysearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@color/primary"
+        android:text="A"
+        android:padding="8dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/tv_cityname_item_lsitview_citysearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/beijing"
+        android:padding="8dp"
+        android:elevation="2dp"
+        android:background="@drawable/selector_btn_white"
+        android:textColor="@color/primary_text"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianxia.sijia.ui.SettingActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_toolbar_activity"
+        android:id="@+id/layout_toolbar_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="允许被附近发现"
+            style="@style/textview_setting" />
+
+        <ImageButton
+            android:id="@+id/btn_find_setting"
+            style="@style/imageview_setting" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/accent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_setting"
+            android:text="接收通知" />
+
+        <ImageButton
+            android:id="@+id/btn_nititycation_setting"
+            style="@style/imageview_setting" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/accent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_setting"
+            android:text="声音" />
+
+        <ImageButton
+            android:id="@+id/btn_voice_setting"
+            style="@style/imageview_setting" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/accent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview_setting"
+            android:text="震动" />
+
+        <ImageButton
+            android:id="@+id/btn_zhendong_setting"
+            style="@style/imageview_setting" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/accent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_cache_setting"
+            style="@style/textview_setting"
+            android:text="清除磁盘缓存(0.0M)" />
+
+        <Button
+            android:id="@+id/btn_clear_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/icons"
+            android:text="清除"
+            android:background="@drawable/selector_btn_accent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/primary"
+        android:visibility="gone" />
+
+</LinearLayout>

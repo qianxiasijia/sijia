@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+
+        <item
+            android:id="@+id/item_mypost_menu_drawer_main"
+            android:icon="@drawable/ic_post"
+            android:title="我的发布" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/item_favorite_menu_drawer_main"
+            android:icon="@drawable/ic_favor"
+            android:title="我的收藏" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/item_setting_menu_drawer_main"
+            android:icon="@drawable/ic_setting"
+            android:title="我的设置" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/item_exit_menu_drawer_main"
+            android:icon="@drawable/ic_exit"
+            android:title="退出" />
+    </group>
+
+</menu>

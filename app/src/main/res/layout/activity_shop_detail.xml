@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFAFAFA"
+    android:orientation="vertical"
+    android:id="@+id/fl_shopdetail_root"
+    tools:context="com.qianxia.sijia.ui.FoodDetailActivity">
+
+    <include
+        android:id="@+id/layout_toolbar_activity"
+        layout="@layout/layout_toolbar_activity" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/refreshlsv_fooddetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_hotcity_p"
+            android:id="@+id/ll_fooddetail_sendreplay"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_fooddetail_emos"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ue007" />
+
+                <EditText
+                    android:id="@+id/et_fooddetail_sendreplay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/shape_background_white"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_fooddetail_sendreplay"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/selector_btn_accent"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="@color/icons"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fooddetail_emocontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

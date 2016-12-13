@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\ASProjects\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\ASProjects\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "E:\\ASProjects\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\ASProjects\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "C:\\Android\\studio\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\Android\\studio\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "E:\\git\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\git\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "C:\\Android\\studio\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\Android\\studio\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "E:\\git\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\git\\Sijia\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

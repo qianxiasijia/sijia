@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sijia="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="4dp"
+    app:contentPadding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_sharefragment_recyclerview_foodpic"
+            android:layout_width="120dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_sharefragment_recyclerview_foodname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/tv_sharefragment_recyclerview_shopname"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_sharefragment_recyclerview_shopname"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:text="shopName"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp">
+                <!--<RatingBar-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="?android:ratingBarStyleSmall"-->
+                <!--android:numStars="7"-->
+                <!--android:stepSize="0.5"-->
+                <!--android:rating="3.5"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentTop="true"/>-->
+
+
+                <TextView
+                    android:id="@+id/tv_sharefragment_recyclerview_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="8dp"
+                    android:maxLines="2"
+                    android:layout_toStartOf="@+id/tv_sharefragment_recyclerview_commentnum"
+                    android:text="address"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="10sp" />
+
+                <com.qianxia.sijia.view.SijiaTextView
+                    android:id="@+id/tv_sharefragment_recyclerview_likernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="bottom"
+                    android:text="(0)"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    sijia:sijiaDrawableLeft="@drawable/ic_like_select"
+                    sijia:sijiaDrawableLeftHeight="4dp"
+                    sijia:sijiaDrawableLeftWidth="4dp"
+
+                    />
+
+                <com.qianxia.sijia.view.SijiaTextView
+                    android:id="@+id/tv_sharefragment_recyclerview_commentnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/tv_sharefragment_recyclerview_likernum"
+                    android:gravity="bottom"
+                    android:text="(0)"
+                    android:textSize="12sp"
+                    android:textColor="@color/secondary_text"
+                    sijia:sijiaDrawableLeft="@drawable/ic_comment"
+                    sijia:sijiaDrawableLeftHeight="4dp"
+                    sijia:sijiaDrawableLeftWidth="4dp" />
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

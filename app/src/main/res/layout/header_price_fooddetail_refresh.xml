@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sijia="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_anthor_fooddetail_header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="12dp"
+        android:text="该佳食信息由提供" />
+
+    <TextView
+        android:id="@+id/tv_foodname_fooddetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:textSize="16sp"
+        android:textColor="@color/accent"
+        android:text="美食名称" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_shopname_fooddetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:text="商店名称"
+        android:background="@drawable/selector_btn_white"
+        android:elevation="2dp" />
+
+    <TextView
+        android:id="@+id/tv_address_fooddetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:text="地址"
+        android:background="@drawable/selector_btn_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_opentime_fooddetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:text="营业时间" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_price_fooddetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:text="参考价格：￥" />
+
+
+    <TextView
+        android:id="@+id/tv_description_fooddetail_header2"
+        style="@style/style_header_content_shopdetail_textview"
+        android:text="description" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_background_white"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="评论列表"
+            android:textSize="14sp"
+            android:textColor="@color/accent"
+            android:focusable="false" />
+
+        <com.qianxia.sijia.view.SijiaTextView
+            android:padding="8dp"
+            android:id="@+id/tv_likenum_fooddetail_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:text="(0)"
+            android:textSize="14sp"
+            sijia:sijiaDrawableLeft="@drawable/ic_like"
+            sijia:sijiaDrawableLeftHeight="8dp"
+            sijia:sijiaDrawableLeftWidth="8dp"
+            android:focusable="false"
+
+            />
+
+        <com.qianxia.sijia.view.SijiaTextView
+            android:id="@+id/tv_commentnum_fooddetail_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:layout_toStartOf="@+id/tv_likenum_fooddetail_header2"
+            android:gravity="center_vertical"
+            android:text="(0)"
+            android:textSize="14sp"
+            sijia:sijiaDrawableLeft="@drawable/ic_comment"
+            sijia:sijiaDrawableLeftHeight="6dp"
+            sijia:sijiaDrawableLeftWidth="6dp"
+            android:focusable="false" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_writecomment_fooddetail_header2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:text="写评论"-->
+        <!--android:textSize="12sp"-->
+        <!--android:focusable="false"/>-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+</LinearLayout>
+
+

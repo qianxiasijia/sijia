@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianxia.sijia.ui.MapActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_toolbar_activity"
+        android:id="@+id/layout_toolbar_activity" />
+
+    <RadioGroup
+        android:id="@+id/rg_map_other"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_map_food"
+            android:text="美食"
+            style="@style/rationbutton_map_top" />
+
+        <RadioButton
+            android:id="@+id/rb_map_travel"
+            android:text="旅游景点"
+            style="@style/rationbutton_map_top" />
+
+        <RadioButton
+            android:id="@+id/rb_map_hotel"
+            android:text="酒店"
+            style="@style/rationbutton_map_top" />
+
+        <RadioButton
+            android:id="@+id/rb_map_toilet"
+            android:text="公共卫生间"
+            style="@style/rationbutton_map_top" />
+
+    </RadioGroup>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview_map"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_map_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal">
+
+        <com.qianxia.sijia.view.CircleImageView
+            android:id="@+id/iv_map"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_map_name"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:text="名称:"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_map_addressorsignup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="地址:"
+                android:lines="2"
+                android:textSize="12sp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_map_more"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:background="@drawable/selector_btn_white"
+            android:text="查看"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

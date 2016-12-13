@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CountFragment"
+    android:background="#8FFFFFFF"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_user_info"
+        layout="@layout/include_user_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/primary_light" />
+
+    <LinearLayout
+        android:id="@+id/ll_count_mypost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_btn_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_post"
+            android:layout_marginStart="32dp" />
+
+        <TextView
+            style="@style/textView_count_item"
+            android:text="我的发布" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_count_mycollection"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_btn_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_favor"
+            android:layout_marginStart="32dp" />
+
+        <TextView
+            style="@style/textView_count_item"
+            android:text="我的收藏" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_count_mysetting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_btn_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_setting"
+            android:layout_marginStart="32dp" />
+
+        <TextView
+            style="@style/textView_count_item"
+            android:text="我的设置" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_logout_count"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_btn_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_exit"
+            android:layout_marginStart="32dp" />
+
+        <TextView
+            style="@style/textView_count_item"
+            android:text="退出" />
+    </LinearLayout>
+
+
+    <!--<Button android:id="@+id/btn_logout_count"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="36dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:text="登出"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/selector_btn_gray"/>-->
+
+
+</LinearLayout>

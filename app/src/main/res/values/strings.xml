@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">思佳</string>
+    <string name="localCity">当前定位城市：</string>
+    <string name="beijing">北京</string>
+    <string name="hotCities">推荐城市：</string>
+    <string name="myOrders">我的订单</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_toggle_open">打开</string>
+    <string name="drawer_toggle_close">关闭</string>
+    <string name="cityselect_toolbar">城市选择</string>
+    <string name="search_toolbar">搜索</string>
+    <string name="share_toolbar">我要分享</string>
+    <string name="about_toolbar">关于</string>
+    <string name="register_toolbar">退出</string>
+    <string name="write_toolbar">我要评论</string>
+    <string-array name="array_sort_spinner">
+        <item>默认排序</item>
+        <item>按距离排序</item>
+        <item>按评价排序</item>
+        <item>按销量排序</item>
+    </string-array>
+    <string name="title_activity_food_rank">FoodRankActivity</string>
+    <string name="dialog_cancell">取消</string>
+    <string name="dialog_sumbit">确定</string>
+    <string name="collect_toolbar">我要收藏</string>
+    <string name="backhome_toolbar">回到主页</string>
+    <string name="menu_delet">删除</string>
+</resources>
